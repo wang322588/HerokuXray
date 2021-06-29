@@ -2,17 +2,17 @@
     "inbounds": 
     [
         {
-            "listen":8443"/etc/caddy/vmess","protocol": "vmess",
+            "listen": "/etc/caddy/vmess","protocol": "vmess",
             "settings": {"clients": [{"id": "$AUUID"}]},
             "streamSettings": {"network": "ws","wsSettings": {"path": "/$AUUID-vmess"}}
         },
         {
-            "listen":8443"/etc/caddy/vless","protocol": "vless",
+            "port": 4234,"listen": "127.0.0.1","protocol": "vless",
             "settings": {"clients": [{"id": "$AUUID"}],"decryption": "none"},
             "streamSettings": {"network": "ws","wsSettings": {"path": "/$AUUID-vless"}}
         },
         {
-            "listen":8443"/etc/caddy/trojan","protocol": "trojan",
+            "listen": "/etc/caddy/trojan","protocol": "trojan",
             "settings": {"clients": [{"password":"$AUUID"}]},
             "streamSettings": {"network": "ws","wsSettings": {"path": "/$AUUID-trojan"}}
         }
