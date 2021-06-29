@@ -7,7 +7,7 @@
             "streamSettings": {"network": "ws","wsSettings": {"path": "/$AUUID-vmess"}}
         },
         {
-            "port": 4234,"listen": "127.0.0.1","protocol": "vless",
+            "port": 8443,"listen": "127.0.0.1","protocol": "vless",
             "settings": {"clients": [{"id": "$AUUID"}],"decryption": "none"},
             "streamSettings": {"network": "ws","wsSettings": {"path": "/$AUUID-vless"}}
         },
